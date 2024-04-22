@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base{
+    html{
+        @apply scroll-smooth font-rubik 
+    }
+    section{
+       @apply sm:mx-12 sm:my-12 lg:mx-28 lg:my-24
+    }
+    h1{
+        @apply xl:text-[50px] sm:text-[20px] lg:text-[40px] leading-10
+    }
+    h4{
+        @apply sm:text-sm  lg:text-base xl:text-lg
+    }
+    h2{
+        @apply lg:text-3xl sm:text-lg
+    }
+    h3{
+        @apply lg:text-xl sm:text-base md:text-xs
+    }
+    p{
+        @apply sm:py-2 lg:py-4 sm:text-xs lg:text-base tracking-wide
+    }
+}
+@layer components{
+    /* .styling{
+        @apply  transform 0.3s ease
+    } */
+    .navdropmenu{
+        @apply py-2 pl-2 tracking-wide text-start font-bold 
+     }
+    .nav__link{
+        @apply sm:py-4 lg:py-[10px]  text-reddish lg:text-2xl xl:text-2xl xl:px-2 xl:tracking-wide lg:tracking-tight 
+    }
+    .set{
+        @apply sm:px-4 lg:px-28 lg:py-24 sm:py-12
+    }
+    .horizon{
+        @apply w-full h-[1px] opacity-70 bg-white
+    }
+    .foot{
+        @apply bg-white text-black py-[6px] px-[10px] border-[1px] rounded-full hover:bg-transparent hover:border-white mr-2 hover:text-white transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300
+    }
+    .btnstyle{
+        @apply sm:p-2 md:p-[6px] lg:p-4 bg-reddish hover:bg-opacity-90 rounded-lg text-sm font-bold
+    }
+    .btn_style{
+        @apply sm:w-[40px] sm:h-[40px] lg:w-[60px] lg:h-[60px] bg-reddish rounded-full border-[1px] flex justify-center items-center hover:opacity-60 hover:translate-x-1 transition duration-700 ease-in-out hover:cursor-pointer
+    }
+    .dropdown-content{
+        @apply lg:top-[47px] sm:top-[25px]
+    }
+    /* .portfogallery{
+        @apply w-full h-80 hover:translate-x-1 hover:scale-110 hover:duration-300 hover:shadow-xl hover:shadow-linkcolor bg-no-repeat bg-cover;
+    } */
+}

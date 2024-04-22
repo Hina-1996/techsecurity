@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base{
+    html{
+        @apply scroll-smooth font-rubik
+    }
+    section{
+       @apply mx-28 my-24
+    }
+    h1{
+        @apply text-[50px]
+    }
+    p{
+        @apply py-4
+    }
+    h4{
+        @apply text-lg
+    }
+    h2{
+        @apply text-3xl
+    }
+    h3{
+        @apply text-xl
+    }
+    p{
+        @apply text-base
+    }
+}
+@layer components{
+    .nav__link{
+        @apply py-4 hover:text-red-800  text-reddish lg:text-2xl xl:text-2xl xl:px-2 xl:tracking-wide lg:tracking-tight
+    }
+    .set{
+        @apply px-28 py-24
+    }
+    .foot{
+        @apply bg-white text-black py-[6px] px-[10px] border-[1px] rounded-full hover:bg-transparent hover:border-white mr-2 hover:text-white transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300
+    }
+    .btnstyle{
+        @apply p-4 bg-reddish hover:bg-opacity-90 rounded-lg 
+    }
+}
